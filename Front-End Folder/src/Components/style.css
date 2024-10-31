@@ -1,0 +1,343 @@
+.loginPage {
+  background: url("Images/employeems.jpeg");
+  background: linear-gradient(rgba(11, 11, 11, 0.5), rgba(10, 10, 10, 0.5)),
+    url("Images/employeems.jpeg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.btn {
+  background-color: #65b741;
+  color: white;
+  transition: 0.3s all;
+}
+.btn:hover {
+  background-color: #347928; /* Background color on hover */
+  color: white;
+}
+.loginForm1 {
+  background-color: rgba(1, 32, 93, 0.6);
+  color: white;
+  width: 90%;
+  max-width: 400px;
+}
+@media (max-width: 576) {
+  .loginForm1 {
+    padding: 15px;
+  }
+  .loginPage {
+    background-size: cover;
+  }
+}
+@media (min-width: 577) {
+  .loginForm1 {
+    padding: 20px;
+  }
+  .loginPage {
+    background-size: cover;
+  }
+}
+
+.loginForm {
+  background-color: rgba(1, 32, 93, 0.6);
+  color: white;
+  width: 40%;
+  height: 30%;
+}
+.btn1 {
+  width: 100px;
+  margin-left: 50px;
+  margin-top: 10px;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  /* For tablets and smaller screens */
+  .loginForm {
+    width: 50%;
+    height: 30%; /* Set width to 80% for smaller screens */
+  }
+  .btn1 {
+    margin-left: 32px;
+    width: 100px;
+  }
+  .loginPage {
+    background-size: cover;
+  }
+}
+
+@media (max-width: 576px) {
+  /* For mobile screens */
+  .loginForm {
+    width: 40%;
+    height: 42%; /* Set width to 90% for mobile screens */
+  }
+  .btn1 {
+    width: 100px;
+    margin-left: 40px;
+    margin-top: 8px;
+  }
+  .loginPage {
+    background-size: cover;
+  }
+}
+@media (max-width: 390px) {
+  /* For mobile screens */
+  .loginForm {
+    padding: 15px;
+    max-height: 300px;
+    /* Center items horizontally */
+  }
+
+  .btn1 {
+    width: 100px;
+    position: relative; /* Center button vertically */
+    right: 36px;
+  }
+  .loginPage {
+    background-size: cover;
+  }
+}
+@media (min-width: 391px) and (max-width: 844px) {
+  /* For mobile screens */
+  .loginForm {
+    padding: 20px;
+    max-height: 350px;
+    /* Center items horizontally */
+  }
+
+  .btn1 {
+    width: 100px;
+    position: relative; /* Center button vertically */
+    right: 32px;
+    top: 30px;
+  }
+  .loginPage {
+    background-size: cover;
+  }
+}
+
+ul li :hover {
+  background-color: gray;
+}
+
+.employee_image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.emp_det_image {
+  width: 100%; /* Adjusts the width of the image */
+  height: auto; /* Maintains aspect ratio */
+  max-height: 200px; /* Sets a maximum height for the image */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
+.sidebar-closed {
+  display: none; /* Hide sidebar */
+}
+
+.sidebar-open {
+  transition: width 0.3s; /* Animation for opening */
+}
+
+.navbar-toggler {
+  background-color: transparent; /* Make the button transparent */
+  border: none; /* Remove border */
+  color: white; /* Change icon color */
+}
+.bg {
+  background-color: #001f3f;
+}
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.dashboard-card {
+  border: 1px solid rgba(255, 255, 255, 0.2); /* حاشیه شفاف */
+  border-radius: 12px; /* گوشه‌های گرد */
+  padding: 1rem;
+  margin: 1rem;
+  flex: 1 1 30%; /* در حالت لپ‌تاپ، هر دیو 30% عرض می‌گیرد */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2); /* سایه ملایم */
+  background: rgba(255, 255, 255, 0.1); /* پس‌زمینه نیمه‌شفاف */
+  backdrop-filter: blur(10px); /* تاری پس‌زمینه */
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* انیمیشن برای اثر hover */
+}
+
+.dashboard-card:hover {
+  transform: scale(1.05); /* بزرگ شدن کارت در حالت hover */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* سایه بیشتر در حالت hover */
+}
+
+@media (max-width: 992px) {
+  /* برای تبلت‌ها */
+  .dashboard-card {
+    flex: 1 1 45%; /* در حالت تبلت، هر دیو 45% عرض می‌گیرد */
+    margin-right: 0.5rem; /* فاصله کمتر */
+  }
+}
+
+@media (max-width: 768px) {
+  /* برای موبایل */
+  .dashboard-card {
+    flex: 1 1 100%; /* در حالت موبایل، هر دیو 100% عرض می‌گیرد */
+    margin: 0.5rem 0; /* فاصله بین دیوها */
+  }
+
+  .table {
+    font-size: 0.9rem; /* اندازه فونت جدول برای موبایل */
+  }
+
+  .btn {
+    font-size: 0.8rem; /* اندازه فونت دکمه‌ها برای موبایل */
+  }
+}
+
+/* Media query خاص برای آیفون */
+@media only screen and (device-width: 375px) and (device-height: 667px) {
+  /* آیفون 6/7/8 */
+  .table {
+    font-size: 0.85rem; /* اندازه فونت جدول برای آیفون */
+  }
+
+  .btn {
+    font-size: 0.75rem; /* اندازه فونت دکمه‌ها برای آیفون */
+  }
+}
+
+@media only screen and (device-width: 375px) and (device-height: 812px) {
+  /* آیفون X/XS/11 Pro */
+  .table {
+    font-size: 0.85rem; /* اندازه فونت جدول برای آیفون */
+  }
+
+  .btn {
+    font-size: 0.75rem; /* اندازه فونت دکمه‌ها برای آیفون */
+  }
+}
+
+@media only screen and (device-width: 414px) and (device-height: 896px) {
+  /* آیفون XR/11/12 Pro Max */
+  .table {
+    font-size: 0.85rem; /* اندازه فونت جدول برای آیفون */
+  }
+
+  .btn {
+    font-size: 0.75rem; /* اندازه فونت دکمه‌ها برای آیفون */
+  }
+}
+.name {
+  color: #043769;
+} /* Employee.css */
+
+.edit-button,
+.delete-button {
+  margin-right: 0.5rem; /* Default spacing */
+}
+
+/* Media query for mobile devices */
+@media (max-width: 768px) {
+  .edit-button,
+  .delete-button {
+    margin-bottom: 0.5rem; /* Increased spacing on mobile */
+  }
+}
+body .container1 {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(144, 238, 144, 1); /* Light green color */
+}
+.box1 div {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background-color: transparent;
+  border: 6px solid rgba(255, 255, 255, 0.8);
+}
+.box1 div :nth-child(1) {
+  top: 12%;
+  left: 42%;
+  animation: animate 7s linear infinite;
+}
+.box1 div :nth-child(2) {
+  top: 70%;
+  left: 50%;
+  animation: animate 7s linear infinite;
+}
+.box1 div :nth-child(3) {
+  top: 12%;
+  left: 6%;
+  animation: animate 9s linear infinite;
+}
+.box1 div :nth-child(4) {
+  top: 20%;
+  left: 60%;
+  animation: animate 10s linear infinite;
+}
+.box1 div :nth-child(5) {
+  top: 67%;
+  left: 10%;
+  animation: animate 6s linear infinite;
+}
+.box1 div :nth-child(6) {
+  top: 80%;
+  left: 70%;
+  animation: animate 12s linear infinite;
+}
+.box1 div :nth-child(7) {
+  top: 60%;
+  left: 80%;
+  animation: animate 15s linear infinite;
+}
+.box1 div :nth-child(8) {
+  top: 32%;
+  left: 25%;
+  animation: animate 16s linear infinite;
+}
+.box1 div :nth-child(9) {
+  top: 90%;
+  left: 25%;
+  animation: animate 9s linear infinite;
+}
+.box1 div :nth-child(10) {
+  top: 20%;
+  left: 80%;
+  animation: animate 5s linear infinite;
+}
+@media (max-width: 768px) {
+  .form-container {
+    padding: 1rem;
+    width: 90%; /* You can adjust the width */
+  }
+}
+
+@media (min-width: 769px) {
+  .form-container {
+    padding: 3rem;
+    width: 50%;
+  }
+}
+@media (max-width: 576px) {
+  .form-container1 {
+    width: 67%;
+  }
+}
+.nav-link {
+  white-space: nowrap; /* Prevent text wrapping */
+  overflow: hidden;
+  text-overflow: ellipsis; /* Truncate with ellipsis if the text overflows */
+  width: 100%; /* Ensure the text takes up full width */
+  padding: 10px 10px; /* Adjust padding for better alignment */
+  display: flex;
+  align-items: center; /* Align icon and text */
+}
+
+.nav-link i {
+  margin-right: 10px; /* Add some space between the icon and text */
+}
